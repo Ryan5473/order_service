@@ -1,0 +1,87 @@
+belkahla@belkahla-IdeaPad-L3-15IML05:~/portfolio/microservice_multivendor/OrderService$ curl -X POST https://api.stripe.co
+belkahla@belkahla-IdeaPad-L3-15IML05:~/portfolio/microservice_multivendor/OrderService$ curl -X POST https://api.stripe.com/v1/checkout/sessions \
+  -u sk_test_51PRE8CRxmMUFtWZK05WwqP2u5Xnh0Nmdawb9NwF4CUDyhqICLQfd8EdxQPBC4IpuTvVybD1LzBT0wmz1vp9itiyz00VIzv17Hi: \
+{ -d payment_method_types[]=card \
+  "id": "cs_test_b1m0DXDYRUITvH2S0P1MGVPfT5Q8bfMW6cnKfm657W1TP1592cH8NbDFdz",
+  "object": "checkout.session",[product_data][name]=Produit 1" \
+  "after_expiration": null,ata][unit_amount]=1999" \
+  "allow_promotion_codes": null, \
+  "amount_subtotal": 10996,ata][currency]=usd" \
+  "amount_total": 10996,e_data][product_data][name]=Produit 2" \
+  "automatic_tax": {price_data][unit_amount]=2999" \
+    "enabled": false,uantity]=1" \
+    "liability": null,ice_data][currency]=usd" \
+    "status": null][price_data][product_data][name]=Produit 3" \
+  }, "line_items[2][price_data][unit_amount]=3999" \
+  "billing_address_collection": null,
+  "cancel_url": "http://localhost:3000/cancel",
+  "client_reference_id": null,st:3000/cancelss \
+  "client_secret": null,
+  "consent": null,
+  "consent_collection": null,
+  "created": 1729038029,
+  "currency": "usd",
+  "currency_conversion": null,
+  "custom_fields": [],
+  "custom_text": {
+    "after_submit": null,
+    "shipping_address": null,
+    "submit": null,
+    "terms_of_service_acceptance": null
+  },
+  "customer": null,
+  "customer_creation": "if_required",
+  "customer_details": null,
+  "customer_email": null,
+  "expires_at": 1729124428,
+  "invoice": null,
+  "invoice_creation": {
+    "enabled": false,
+    "invoice_data": {
+      "account_tax_ids": null,
+      "custom_fields": null,
+      "description": null,
+      "footer": null,
+      "issuer": null,
+      "metadata": {},
+      "rendering_options": null
+    }
+  },
+  "livemode": false,
+  "locale": null,
+  "metadata": {},
+  "mode": "payment",
+  "payment_intent": null,
+  "payment_link": null,
+  "payment_method_collection": "if_required",
+  "payment_method_configuration_details": null,
+  "payment_method_options": {
+    "card": {
+      "request_three_d_secure": "automatic"
+    }
+  },
+  "payment_method_types": [
+    "card"
+  ],
+  "payment_status": "unpaid",
+  "phone_number_collection": {
+    "enabled": false
+  },
+  "recovered_from": null,
+  "saved_payment_method_options": null,
+  "setup_intent": null,
+  "shipping_address_collection": null,
+  "shipping_cost": null,
+  "shipping_details": null,
+  "shipping_options": [],
+  "status": "open",
+  "submit_type": null,
+  "subscription": null,
+  "success_url": "http://localhost:3000/success",
+  "total_details": {
+    "amount_discount": 0,
+    "amount_shipping": 0,
+    "amount_tax": 0
+  },
+  "ui_mode": "hosted",
+  "url": "https://checkout.stripe.com/c/pay/cs_test_b1m0DXDYRUITvH2S0P1MGVPfT5Q8bfMW6cnKfm657W1TP1592cH8NbDFdz#fidkdWxOYHwnPyd1blpxYHZxWjA0VVdAPUZXfWhIUENxUl9Od0kwY2pRZko8VXNVSHNSPEdJbTNgS2I3SnJgSjFUakFGPEtIT2FJRDFPZDVMVzJQU2lkQXFnZ2dmZ39jXWN8QlIyQTRUNkhcNTVCM2JDSmtnZycpJ2N3amhWYHdzYHcnP3F3cGApJ2lkfGpwcVF8dWAnPydocGlxbFpscWBoJyknYGtkZ2lgVWlkZmBtamlhYHd2Jz9xd3BgeCUl"
